@@ -1,0 +1,8 @@
+<div class="card text-left h-100">
+    <!--<img *ngIf="item.images.length > 0" class="card-img-top" [src]="imgURL" alt="">-->
+    <div class="card-body">
+      <h4 class="card-title">{{item.name}}</h4>
+      <p class="card-text">{{item.text.substr(0, 25) + (item.text.length>25 ? '...' : '')}}</p>
+    </div>
+  </div>
+  

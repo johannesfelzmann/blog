@@ -1,0 +1,11 @@
+<div class="container">
+    <div id="title-wrap">
+        <h3>Latest Posts</h3>
+    </div>
+    
+    <div class="col">
+    <div *ngFor="let entry of posts" class="row-1 top-buffer">
+        <app-news-item [newsItem]="entry"></app-news-item>
+    </div>
+    </div>
+</div>
