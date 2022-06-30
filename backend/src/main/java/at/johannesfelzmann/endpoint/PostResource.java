@@ -24,6 +24,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/post")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "http://localhost:4200") //TODO: only for development
 public class PostResource {
     private final PostServiceImplementation postServiceImplementation;
     private final PostMapper postMapper;
