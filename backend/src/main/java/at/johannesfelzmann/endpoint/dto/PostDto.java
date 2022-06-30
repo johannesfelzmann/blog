@@ -1,4 +1,4 @@
-package at.johannesfelzmann.model;
+package at.johannesfelzmann.endpoint.dto;
 
 import at.johannesfelzmann.enumeration.Visual;
 import lombok.AllArgsConstructor;
@@ -6,24 +6,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import javax.validation.constraints.NotEmpty;
 
-import static javax.persistence.GenerationType.AUTO;
-
-/**
- * @author Johannes Felzmann
- */
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
-public class Post {
-    @Id @GeneratedValue(strategy = AUTO)
+public class PostDto {
     private Long id;
     @NotEmpty(message = "Name cannot be empty!")
     private String name;
