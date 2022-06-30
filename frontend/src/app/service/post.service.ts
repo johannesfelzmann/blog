@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, filter, tap } from 'rxjs/operators';
 import { Visual } from '../enum/visual.enum';
-import { CustomResponse } from '../dtos/custom-response';
 import { Post } from '../dtos/post';
 
 @Injectable({

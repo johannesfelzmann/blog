@@ -6,10 +6,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+
+import java.util.HashSet;
+import java.util.Set;
 
 import static javax.persistence.GenerationType.AUTO;
 
@@ -28,6 +29,7 @@ public class Post {
     @NotEmpty(message = "Name cannot be empty!")
     private String name;
     private String text;
-    private String image;
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
+    private Set<File> images = new HashSet<>();
     private Visual visual;
 }

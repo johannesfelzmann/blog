@@ -18,6 +18,6 @@ public class PostDto {
     @NotEmpty(message = "Name cannot be empty!")
     private String name;
     private String text;
-    private String image;
+    private FileDto[] images = new FileDto[10];
     private Visual visual;
 }

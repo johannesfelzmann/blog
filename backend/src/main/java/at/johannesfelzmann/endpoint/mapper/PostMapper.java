@@ -6,7 +6,7 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
-@Mapper
+@Mapper(uses = {FileMapper.class})
 public interface PostMapper {
     PostMapper INSTANCE = Mappers.getMapper(PostMapper.class);
 
