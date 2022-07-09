@@ -1,0 +1,1 @@
+- TODO: change retrieving items from backend for categories; only retrieve current category posts 
