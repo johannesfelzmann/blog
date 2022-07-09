@@ -1,6 +1,6 @@
 package at.johannesfelzmann.endpoint.dto;
 
-import at.johannesfelzmann.enumeration.Visual;
+import at.johannesfelzmann.enumeration.Category;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,5 +19,5 @@ public class PostDto {
     private String name;
     private String text;
     private FileDto[] images = new FileDto[10];
-    private Visual visual;
+    private Category category;
 }

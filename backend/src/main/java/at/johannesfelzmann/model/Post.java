@@ -1,6 +1,6 @@
 package at.johannesfelzmann.model;
 
-import at.johannesfelzmann.enumeration.Visual;
+import at.johannesfelzmann.enumeration.Category;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -31,5 +31,5 @@ public class Post {
     private String text;
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     private Set<File> images = new HashSet<>();
-    private Visual visual;
+    private Category category;
 }

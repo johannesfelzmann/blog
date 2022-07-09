@@ -38,6 +38,7 @@ export class AddPostComponent implements OnInit {
     this.addPostForm = this.formBuilder.group({
       title: ['', [Validators.required, Validators.maxLength(100)]],
       text: ['', [Validators.required, Validators.maxLength(10000)]],
+      category: ['', [Validators.required]],
       files: ['']
     });
   }
@@ -49,6 +50,7 @@ export class AddPostComponent implements OnInit {
 
       this.post.name = this.addPostForm.value.title;
       this.post.text = this.addPostForm.value.text;
+      this.post.category = this.addPostForm.value.category;
 
       const fileService = this.fileService;
       let count = this.files.length;
@@ -78,6 +80,7 @@ export class AddPostComponent implements OnInit {
               this.post.images = postImages;
               this.post.name = this.addPostForm.value.title;
               this.post.text = this.addPostForm.value.text;
+              this.post.category = this.addPostForm.value.category;
               console.log(this.post)
               this.postService.savePost(this.post).subscribe(
                 () => {
@@ -103,7 +106,7 @@ export class AddPostComponent implements OnInit {
     this.post.name = null;
     this.post.text = null;
     this.post.images = null;
-    this.post.visual = null;
+    this.post.category = null;
   }
 
   onFileChange(event) {

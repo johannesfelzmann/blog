@@ -1,0 +1,11 @@
+<div class="container" >
+    <div id="title-wrap">
+        <h3>Latest Race Recaps</h3>
+    </div>
+    
+    <div class="col">
+    <div *ngFor="let entry of posts" class="row-1 top-buffer">
+        <app-races-item [racesItem]="entry"></app-races-item>
+    </div>
+    </div>
+</div>

@@ -2,7 +2,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, filter, tap } from 'rxjs/operators';
-import { Visual } from '../enum/visual.enum';
+import { Category } from '../enum/category.enum';
 import { Post } from '../dtos/post';
 
 @Injectable({

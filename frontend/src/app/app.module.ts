@@ -12,6 +12,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NewsDetailComponent } from './components/news-detail/news-detail.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { AddPostComponent } from './components/add-post/add-post.component';
+import { RacesComponent } from './components/races/races.component';
+import { RacesItemComponent } from './components/races-item/races-item.component';
+import { RacesDetailComponent } from './components/races-detail/races-detail.component';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { AddPostComponent } from './components/add-post/add-post.component';
     NewsItemComponent,
     FooterComponent,
     NewsDetailComponent,
-    AddPostComponent
+    AddPostComponent,
+    RacesComponent,
+    RacesItemComponent,
+    RacesDetailComponent
   ],
   imports: [
     BrowserModule,

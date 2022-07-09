@@ -30,6 +30,21 @@
           </small>
         </div>
       </div>
+
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select name="category" id="category" formControlName="category" class="select-input form-select"
+          aria-describedby="categoryHelp">
+          <option value="NEWS">News</option>
+          <option value="RACE">Races</option>
+          <option value="TECHNIC">Technic</option>
+        </select>
+        <div *ngIf="submitted && addPostForm.controls.role.errors" class="error">
+          <small class="form-text text-danger" *ngIf="addPostForm.controls.role.errors.required">A Category is
+            required!
+          </small>
+        </div>
+      </div>
   
       <div class="form-group">
         <label id="fileLabel" for="files">Picture Upload</label>

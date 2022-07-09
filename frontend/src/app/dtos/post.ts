@@ -1,4 +1,4 @@
-import { Visual } from "../enum/visual.enum";
+import { Category } from "../enum/category.enum";
 import { CustomFile } from "./customFile";
 
 export interface Post {
@@ -6,5 +6,5 @@ export interface Post {
     name : string;
     text : string;
     images: CustomFile[];
-    visual: Visual;
+    category: Category;
 }
