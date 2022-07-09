@@ -15,6 +15,10 @@ import { AddPostComponent } from './components/add-post/add-post.component';
 import { RacesComponent } from './components/races/races.component';
 import { RacesItemComponent } from './components/races-item/races-item.component';
 import { RacesDetailComponent } from './components/races-detail/races-detail.component';
+import { TechnicsComponent } from './components/technics/technics.component';
+import { TechnicsItemComponent } from './components/technics-item/technics-item.component';
+import { TechnicsDetailComponent } from './components/technics-detail/technics-detail.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 @NgModule({
@@ -28,7 +32,11 @@ import { RacesDetailComponent } from './components/races-detail/races-detail.com
     AddPostComponent,
     RacesComponent,
     RacesItemComponent,
-    RacesDetailComponent
+    RacesDetailComponent,
+    TechnicsComponent,
+    TechnicsItemComponent,
+    TechnicsDetailComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

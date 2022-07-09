@@ -7,4 +7,5 @@ export interface Post {
     text : string;
     images: CustomFile[];
     category: Category;
+    author: string;
 }

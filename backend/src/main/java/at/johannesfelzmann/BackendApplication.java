@@ -53,10 +53,10 @@ public class BackendApplication {
 			postImages.add(images.get(1));
 			postImages.add(images.get(2));
 
-			postRepository.save(new Post(null, "Test1", "TestTestTest1", postImages, Category.NEWS));
-			postRepository.save(new Post(null, "Test2", "TestTestTest2", null, Category.NEWS));
-			postRepository.save(new Post(null, "Test3", "TestTestTest3", null, Category.RACE));
-			postRepository.save(new Post(null, "Test4", "TestTestTest4", null, Category.TECHNIC));
+			postRepository.save(new Post(null, "Test1", "TestTestTest1", postImages, Category.NEWS, "Johannes Felzmann"));
+			postRepository.save(new Post(null, "Test2", "TestTestTest2", null, Category.NEWS, "Johannes Felzmann"));
+			postRepository.save(new Post(null, "Test3", "TestTestTest3", null, Category.RACE, "Johannes Felzmann"));
+			postRepository.save(new Post(null, "Test4", "TestTestTest4", null, Category.TECHNIC, "Johannes Felzmann"));
 
 		};
 	}

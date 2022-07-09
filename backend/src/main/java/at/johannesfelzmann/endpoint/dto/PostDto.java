@@ -20,4 +20,5 @@ public class PostDto {
     private String text;
     private FileDto[] images = new FileDto[10];
     private Category category;
+    private String author;
 }

@@ -1,0 +1,11 @@
+<div class="container" >
+    <div id="title-wrap">
+        <h3>Latest Nerd Stuff and Technical Tricks</h3>
+    </div>
+    
+    <div class="col">
+    <div *ngFor="let entry of posts" class="row-1 top-buffer">
+        <app-technics-item [technicsItem]="entry"></app-technics-item>
+    </div>
+    </div>
+</div>

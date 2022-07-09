@@ -32,4 +32,5 @@ public class Post {
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     private Set<File> images = new HashSet<>();
     private Category category;
+    private String author;
 }
