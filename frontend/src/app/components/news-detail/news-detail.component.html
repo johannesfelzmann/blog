@@ -1,0 +1,29 @@
+<article class="news-detail" *ngIf="postItem">
+    <div class="header" *ngIf=" postItem.images.length > 0">
+        <carousel
+            [images]="imgURL" 
+            [cellsToShow]="1" 
+            [loop]="true" 
+            [objectFit]="'cover'"
+            [cellWidth]="'100%'"
+            [height]="500">
+        </carousel>
+    </div>
+    <div class="body">
+      <div class="row">
+        <div class="col-md-10">
+          <h3>{{postItem.name}}</h3>
+          <p> {{postItem.text}}
+          </p>
+        </div>
+        <div class="col-md-2 additional-info">
+          <h5>About this post</h5>
+  
+  
+          <p>Written by: <br>
+            
+        </div>
+      </div>
+  
+    </div>
+  </article>

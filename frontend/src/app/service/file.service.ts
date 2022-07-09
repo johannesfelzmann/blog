@@ -8,7 +8,7 @@ import { CustomFile } from '../dtos/customFile';
 })
 export class FileService {
 
-  private uri: string = 'http://localhost:8080/post' + '/files';
+  private uri: string = 'http://localhost:8080' + '/files';
 
   constructor(private httpClient: HttpClient) { }
 

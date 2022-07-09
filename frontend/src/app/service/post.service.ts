@@ -18,23 +18,14 @@ export class PostService {
     return this.http.get<Post[]>(`${this.apiUrl}/list`);
   }
 
-   /* posts$ = <Observable <CustomResponse>> this.http.get<CustomResponse>(`${this.apiUrl}/post/list`)
-  .pipe(
-    tap(console.log),
-    catchError(this.handleError)
-  );
+  getPostById(id: number): Observable<Post> {
+    
+    return this.http.get<Post>(`${this.apiUrl}/get/` + id);
+  }
 
-  save$ = (post: Post) => <Observable <CustomResponse>> this.http.post<CustomResponse>(`${this.apiUrl}/post/save`, post)
-  .pipe(
-    tap(console.log),
-    catchError(this.handleError)
-  );
-
-  delete$ = (postId: number) => <Observable <CustomResponse>> this.http.delete<CustomResponse>(`${this.apiUrl}/post/delete/${postId}`)
-  .pipe(
-    tap(console.log),
-    catchError(this.handleError)
-  );*/
+  savePost(post: Post): Observable<Post> {
+    return this.http.post<Post>(`${this.apiUrl}/save`, post);
+  }
 
   handleError(error: HttpErrorResponse): Observable <never> {
     console.log(error);
